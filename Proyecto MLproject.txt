@@ -1,0 +1,29 @@
+Proyecto MLproject
+
+1. Configuración inicial
+  - creo una carpeta, copio la dirección, abro el cmd de anaconda escribo cd direccion.
+  - Creo el ambiente con el comando conda create -p venv python==3.8 -y
+  - Activo el ambiente virtual con conda activate venv/
+
+. Clonar el repositorio en gitHub
+ - git init
+ - Creo un archivo README.md fuera de la carpete venv
+ - Agrego al repositorio el readme con git add README.md
+ - git commit -m "First commit"
+ - Sigo las intrucciones de github para crear repositorio con linea de comandos
+ - Antes del último paso configuro el git global con el comando git config --global user.email arias2832@hotmail.com
+ - Doy click en Add file en el repositorio para crear el archivo .gitignore , despúes doy click en choose .gitingore
+   y escojo python. Escribo el mensaje "create gitignore" y doy click en commit
+ - En la consola de vs code escribo git pull para bajar .gitingore de github al proyecto
+ - creo un archivo setup.py (este archivo permite crear mi app de ML como un paquete) y requirement.txt
+ - Escribo el código de setup.py
+ - Creo un folder src y dentro un archivo __init__.py
+ -Creo la función get_requirement() para install_requires del setup
+- configura el requirements.txt con -e .	
+ 
+2. Crear la estructura del proyecto
+- Dentro de src, creo folder components, y dentro __init__.py, y  data_ingestion.py, data_transformation.py, model_trainer.py
+- En src, creo el folder pipeline y dentro los archivos train_pipeline.py, predict_pipeline.py, __init__.py
+- En src creo los archivos: logger.py, exception.py, utils.py
+- Código en exception.py
+- Código en logger.py
